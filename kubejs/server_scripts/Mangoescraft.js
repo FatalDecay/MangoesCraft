@@ -1,3 +1,23 @@
+//shulker shell
+ServerEvents.recipes(event => {
+    event.shaped(
+        Item.of('minecraft:shulker_shell'),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: 'minecraft:purpur_pillar',
+            B: 'abyssal_decor:shell_item',
+            C: 'minecraft:chest'
+        }
+    )
+});
+//ghast tear
+ServerEvents.recipes(event => {
+    event.recipes.create.mixing('minecraft:ghast_tear', ['minecraft:soul_sand', 'abyssal_decor:rockwater_tear' ,Fluid.water(1000)])
+});
 //Dripstone
 ServerEvents.recipes(event => {
     event.recipes.create.mixing('minecraft:dripstone_block', ['minecraft:cobblestone', 'minecraft:granite'])
