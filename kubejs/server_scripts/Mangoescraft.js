@@ -1,3 +1,7 @@
+//galena
+ServerEvents.recipes(event => {
+    event.recipes.create.mixing('tfmg:galena', ['minecraft:dripstone_block' ,Fluid.water(1000)])
+});
 //shulker shell
 ServerEvents.recipes(event => {
     event.shaped(
