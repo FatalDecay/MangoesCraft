@@ -1,4 +1,20 @@
-﻿//Uranium
+//Dripstone
+ServerEvents.recipes(event => {
+    event.recipes.create.mixing('minecraft:dripstone_block', ['minecraft:cobblestone', 'minecraft:granite'])
+});
+//lignite
+ServerEvents.recipes(event => {
+    event.recipes.create.haunting('tfmg:lignite', 'minecraft:soul_sand')
+});
+//tuff
+ServerEvents.recipes(event => {
+    event.recipes.create.mixing('minecraft:tuff', ['minecraft:cobblestone', 'minecraft:diorite', 'minecraft:quartz'])
+});
+//Nether star
+ServerEvents.recipes(event => {
+    event.recipes.create.mixing('minecraft:nether_star', [Item.of('minecraft:soulsand', 4), Item.of('minecraft:wither_skeleton_skull', 3)]).superheated()
+});
+//Uranium
 ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of('mekanism:raw_uranium').withChance(0.10)], 'minecraft:nether_bricks')
 });
