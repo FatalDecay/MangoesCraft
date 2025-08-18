@@ -18,13 +18,14 @@ ServerEvents.recipes(event => {
 
 //Adding Create crushing recipes
 //raw uranium, limesand, raw copper, raw zinc, raw gold, flint, ancient debris shard, gold nugget, copper nugget, iron nugget, zinc nugget, electrum nugget, osmium nugget
-
+    
+    event.recipes.create.crushing([Item.of([Item.of('mekanism:nugget_osmium').withChance(0.20), Item.of('mekanism:nugget_uranium').withChance(0.20), Item.of('mekanism:nugget_tin').withChance(0.20), Item.of('nugget_lead').withChance(0.20)], 'minecraft:dripstone_block')
     event.recipes.create.crushing([Item.of('mekanism:raw_uranium').withChance(0.10)], 'minecraft:nether_bricks')
     event.recipes.create.crushing([Item.of('tfmg:limesand'), Item.of('mekanism:dust_fluorite').withChance(0.6)], 'create:limestone')
     event.recipes.create.crushing('minecraft:raw_copper', 'minecraft:granite')
     event.recipes.create.crushing('create:raw_zinc', 'minecraft:andesite')
     event.recipes.create.crushing([Item.of('minecraft:raw_gold').withChance(0.2), Item.of('kubejs:ancient_debris_shard').withChance(0.0005)], 'minecraft:blackstone')
-    event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:gold_nugget').withChance(0.1), Item.of('create:copper_nugget').withChance(0.1), Item.of('minecraft:iron_nugget').withChance(0.1), Item.of('create:zinc_nugget').withChance(0.1), Item.of('createaddition:electrum_nugget').withChance(0.1), Item.of('mekanism:nugget_osmium').withChance(0.1)], 'minecraft:tuff')
+    event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:gold_nugget').withChance(0.20), Item.of('create:copper_nugget').withChance(0.20), Item.of('minecraft:iron_nugget').withChance(0.20), Item.of('create:zinc_nugget').withChance(0.20), Item.of('createaddition:electrum_nugget').withChance(0.20)], 'minecraft:tuff')
 
 //Adding Create compacting recipes
 //iron nugget, clay ball
