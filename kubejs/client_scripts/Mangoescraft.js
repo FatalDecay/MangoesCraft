@@ -1,0 +1,11 @@
+JEIEvents.hideItems(event => {
+     event.hide('hearthandharvest:tree_tapper')
+     event.hide('hearthandharvest:jerky')
+     event.hide('hearthandharvest:syrup_bottle')
+     event.hide('hearthandharvest:sap_bucket')
+     event.hide('hearthandharvest:batter')
+     event.hide('hearthandharvest:tree_tapper')
+     event.hide('hearthandharvest:syrup_bottle')
+     event.hide('hearthandharvest:sap_bucket')
+     event.hide('hearthandharvest:batter')
+})
