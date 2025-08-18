@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 //Adding Create crushing recipes
 //raw uranium, limesand, raw copper, raw zinc, raw gold, flint, ancient debris shard, gold nugget, copper nugget, iron nugget, zinc nugget, electrum nugget, osmium nugget
     
-    event.recipes.create.crushing([Item.of([Item.of('mekanism:nugget_osmium').withChance(0.20), Item.of('mekanism:nugget_uranium').withChance(0.20), Item.of('mekanism:nugget_tin').withChance(0.20), Item.of('nugget_lead').withChance(0.20)], 'minecraft:dripstone_block')
+    event.recipes.create.crushing([Item.of('mekanism:nugget_osmium').withChance(0.20), Item.of('mekanism:nugget_uranium').withChance(0.20), Item.of('mekanism:nugget_tin').withChance(0.20), Item.of('nugget_lead').withChance(0.20)], 'minecraft:dripstone_block')
     event.recipes.create.crushing([Item.of('mekanism:raw_uranium').withChance(0.10)], 'minecraft:nether_bricks')
     event.recipes.create.crushing([Item.of('tfmg:limesand'), Item.of('mekanism:dust_fluorite').withChance(0.6)], 'create:limestone')
     event.recipes.create.crushing('minecraft:raw_copper', 'minecraft:granite')
