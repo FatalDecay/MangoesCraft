@@ -53,8 +53,7 @@ ServerEvents.recipes(event => {
             'AAA',
             'AAA'
         ],
-        {
-            A: 'kubejs:ancient_debris_shard'}
+        {A: 'kubejs:ancient_debris_shard'}
     )
 
 //Ancient shard craft
@@ -76,6 +75,31 @@ ServerEvents.recipes(event => {
         B: 'minecraft:ender_pearl',
         C: 'minecraft:emerald'
     })
+
+    //Hearth and harvest waffles
+    event.shapeless(
+        Item.of('hearthandharvest:waffle'),
+        [
+            'rusticdelight:syrup',
+            'rusticdelight:batter'
+        ]
+    )
+
+    //hearth and harvest cotton candy
+    event.shaped(
+        Item.of('hearthandharvest:cotton_candy'),
+        [
+            ' A ',
+            'ABA',
+            ' C '
+        ],
+        {
+            A: 'minecraft:sugar',
+            B: 'rusticdelight:cotton_boll',
+            C: 'minecraft:stick'
+        }
+    )
+    
 });
 
 //Removing create/create addon recipes
@@ -102,4 +126,6 @@ ServerEvents.recipes(event => {
     //Removing misc. recipes
     event.remove({ output: 'waystones:warp_stone' })
     event.remove({ id: 'alexsmobs:transmutation_table' })
+    event.remove({ id: 'hearthandharvest:cotton_candy' })
+    event.remove({ id: 'hearthandharvest:waffle'})
 });
