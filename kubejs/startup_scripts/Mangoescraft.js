@@ -17,12 +17,12 @@ StartupEvents.registry('item', event => {
         .displayName('Mango Pickaxe')
         .texture('kubejs:item/mango_pickaxe')
         .tier('mango')
-        .tooltip('(★ ω ★) 10 uses')
+        .tooltip('(★ ω ★)')
 });
 StartupEvents.registry('item', event => {
     event.create('mango_silk', 'pickaxe')
         .displayName('Silky Mango')
         .texture('kubejs:item/mango_silk')
         .tier('mango')
-        .tooltip('(★ ω ★) 10 uses')
+        .tooltip('(★ ω ★)')
 });
